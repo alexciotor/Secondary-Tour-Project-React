@@ -18,6 +18,7 @@ const setTour = (id)=>{
 }
 console.log(data);
 const getData = async()=>{
+  setLoading(true)
   try{
   const response = await fetch(url)
   const data =  await response.json()
